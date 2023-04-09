@@ -1,0 +1,45 @@
+.site-header {
+    padding-top: var(--gap-l);
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    position: fixed;
+    width: 100%;
+
+
+    &__inner {
+        display: flex;
+        grid-column: inner;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        gap: var(--gap-m);
+        color: var(--color-dark-900);
+        font-style: italic;
+        list-style: none;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 600;
+        
+        a {
+            color: var(--color-dark-900);
+
+        }
+
+        svg {
+            transform: translateY(-3px);
+        }
+    }
+
+    &__link {
+
+        &:hover {
+            text-decoration: 4px underline var(--color-accent-orange-900);
+        }
+    }
+
+}
+
+
