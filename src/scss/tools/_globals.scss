@@ -1,0 +1,72 @@
+:root {
+
+    --section-gap: 8rem;
+    --section-gap-inner: calc( var(--section-gap) * 0.75 );
+    
+    --gap-xl: 4rem;
+    --gap-l: 3rem;
+    --gap-m: 2rem;
+    --gap-s: 1rem;
+
+    --border-radius: 0px;
+
+    --color-dark: #222;
+    --color-dark-200: #444;
+    --color-dark-300: #666;
+    --color-dark-400: #666;
+    --color-dark-500: #888;
+    --color-dark-600: #999;
+    --color-dark-700: #bdbdbd;
+    --color-dark-800: #d5d5d5;
+    --color-dark-900: #ffffff;
+
+    --color-accent-orange: #3d1008;
+    --color-accent-orange-200: #5a170b;
+    --color-accent-orange-300: #701d0f;
+    --color-accent-orange-400: #8d2412;
+    --color-accent-orange-500: #ad2b14;
+    --color-accent-orange-600: #c03017;
+    --color-accent-orange-700: #d3361a;
+    --color-accent-orange-800: #e93a1b;
+    --color-accent-orange-900: #FD3E1D;
+    
+    --color-accent-blue: #021e3a;
+    --color-accent-blue-200: #032b53;
+    --color-accent-blue-300: #043769;
+    --color-accent-blue-400: #054686;
+    --color-accent-blue-500: #0452a0;
+    --color-accent-blue-600: #045fb9;
+    --color-accent-blue-700: #076acc;
+    --color-accent-blue-800: #0678e9;
+    --color-accent-blue-900: #0584FF;
+    
+    --color-light: #d2dbe2;
+    --color-light-200: #bcc6ce;
+    --color-light-300: #a5afb8;
+    --color-light-400: #869099;
+    --color-light-500: #737c85;
+    --color-light-600: #435665;
+    --color-light-700: #3F4A53;
+    --color-light-800: #30383f;
+    --color-light-900: #21272c;
+
+    --font-text: "industry", sans-serif;
+    --font-headline: "abolition", sans-serif;
+
+    --line-height: 1.5;
+
+    --font-scale: 1.25;
+    --font-size: 1.125rem;
+
+    --font-size-1: var(--font-size);                                    //18px
+    --font-size-2: calc( var(--font-size-1) * var(--font-scale));       //22,5px
+    --font-size-3: calc( var(--font-size-2) * var(--font-scale));       //28,125px
+    --font-size-4: calc( var(--font-size-3) * var(--font-scale));       //35,15625px
+    --font-size-5: calc( var(--font-size-4) * var(--font-scale));       //43,9453125px
+    --font-size-6: calc( var(--font-size-5) * var(--font-scale));       //54,931640625px
+
+
+    --page-width: 80rem;
+    --grid-container: [full-start] minmax(5rem, 1fr) [inner-start] minmax(0, var(--page-width)) [inner-end] minmax(5rem, 1fr) [full-end];
+
+}
