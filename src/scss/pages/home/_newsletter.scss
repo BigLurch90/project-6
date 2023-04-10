@@ -1,0 +1,125 @@
+.newsletter {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+
+    &__inner {
+        grid-column: inner;
+        
+    }
+
+    &__title {
+        color: var(--color-light-700);
+        font-size: 4rem;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: var(--gap-xl);
+    }
+    
+    &__articles {
+        display: grid;
+        grid-template-columns: 47.5rem 25.5rem;
+        gap: 6.75rem;
+
+    }
+
+}
+
+.newsletter-article {
+
+    &__date {
+        color: hsla(207, 14%, 29%, 0.8);
+        font-size: var(--font-size-1);
+    }
+
+    &__title {
+        color: var(--color-light-700);
+        font-weight: 400;
+        font-style: italic;
+        font-size: 5.5rem;
+        margin-bottom: var(--font-size-4);
+    }
+
+    &__image {
+        margin-bottom: 2.5rem;
+    }
+
+    &__text {
+        color: var(--color-light-600);
+        font-size: var(--font-size-1);
+        margin-bottom: 2.125rem;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: var(--gap-m);
+    }
+
+    &__button {
+        font-family: var(--font-headline);
+        font-size: var(--font-size-2);
+        color: var(--color-dark-900);
+        background-color: var(--color-accent-orange-900);
+        padding: 0.75rem 1.75rem;
+        transform: skew(-12deg);
+    }
+    
+    &__share {
+        font-family: var(--font-headline);
+        font-size: var(--font-size-2);
+        font-style: italic;
+        color: var(--color-light-700);
+    }
+}
+.newsletter-sidebar {
+    display: flex;
+    flex-direction: column;
+
+    &__date {
+        color: hsla(207, 14%, 29%, 0.8);
+        font-size: var(--font-size-1);
+        margin-bottom: 1.125rem;
+    }
+
+    &__title {
+        color: var(--color-light-700);
+        font-weight: 400;
+        font-style: italic;
+        font-size: var(--font-size-3);
+        padding-right: 5rem;
+        margin-bottom: 1.125rem;
+    }
+
+    &__image {
+        margin-bottom: 1.125rem;
+    }
+
+    &__text {
+        color: var(--color-light-600);
+        font-size: var(--font-size-1);
+        margin-bottom: 1.5rem;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: var(--gap-m);
+        margin-bottom: 3.625rem;
+    }
+
+    &__button {
+        font-family: var(--font-headline);
+        font-size: var(--font-size-2);
+        color: var(--color-dark-900);
+        background-color: var(--color-accent-orange-900);
+        padding: 0.75rem 1.75rem;
+        transform: skew(-12deg);
+    }
+    
+    &__share {
+        font-family: var(--font-headline);
+        font-size: var(--font-size-2);
+        font-style: italic;
+        color: var(--color-light-700);
+    }
+}
