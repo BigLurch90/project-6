@@ -384,4 +384,35 @@ li {
   color: var(--color-light-700);
 }
 
+.advertising {
+  display: grid;
+  grid-template-columns: var(--grid-container);
+}
+.advertising__inner {
+  grid-column: inner;
+  background-image: url(../../../../assets/Arrow-right.svg), url(../../../../assets/blue-corner.svg), url(../../../../assets/Tone-advertising.png), url(../../../../assets/Bg-advertising.png);
+  background-position: 99% 95%, right bottom, left top, left top;
+  background-repeat: no-repeat;
+  background-size: auto, auto, cover, cover;
+  height: 23.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: var(--gap-l);
+  margin: 2.625rem 0 6.25rem 0;
+}
+.advertising__inner h2 {
+  color: var(--color-dark-900);
+  font-size: 5.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.advertising__inner h3 {
+  color: var(--color-dark-900);
+  opacity: 0.82;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
 /*# sourceMappingURL=style.css.map */
