@@ -8,6 +8,8 @@
 
     &__inner {
         grid-column: inner;
+        display: flex;
+        align-items: center;
     }
 
     &__footer {
@@ -15,6 +17,8 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 8.75rem;
+        position: absolute;
+        bottom: var(--gap-l);
     }
 
     &__read-more {
@@ -41,7 +45,7 @@
         font-size: 6.25rem;
         font-style: italic;
         font-weight: 400;
-        margin-top: 16.5rem;
+        margin-bottom: var(--font-size-4);
     }
     
     &__buttons {

@@ -1,0 +1,93 @@
+.program {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    margin: var(--gap-xl) 0 5.625rem 0;
+    
+    &__inner {
+        grid-column: inner;
+        display: flex;
+        justify-content: space-between;
+        gap: var(--gap-l);
+    }
+
+    &__box {
+        width: 400px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 0 2.6rem;
+    }
+    
+    &__membership {
+        background-color: var(--color-light-700);
+        background-image: url(../../../../assets/Arrow-right.svg), url(../../../../assets/blue-corner.svg);
+        background-repeat: no-repeat;
+        background-position: 354px 166px, right bottom;
+        
+        h3 {
+            color: var(--color-dark-900);
+            font-size: var(--font-size-2);
+            font-style: italic;
+            font-weight: 400;
+        }
+        
+        h2 {
+            color: var(--color-dark-900);
+            font-size: 4rem;
+            font-style: italic;
+            font-weight: 400;
+        }
+        
+        p {
+            color: hsla(0, 0%, 100%, 0.42);
+            font-size: 0.6875rem;
+        }
+    }
+    
+    &__grupp {
+        background-color: hsla(207, 14%, 29%, 0.07);
+        background-image: url(../../../../assets/Arrow-right.svg), url(../../../../assets/gray-corner.svg);
+        background-repeat: no-repeat;
+        background-position: 354px 166px, right bottom;
+        
+        h3 {
+            color: var(--color-light-700);
+            font-size: var(--font-size-2);
+            font-style: italic;
+            font-weight: 400;
+            
+        }
+        
+        h2 {
+            color: var(--color-accent-orange-900);
+            font-size: 4rem;
+            font-style: italic;
+            font-weight: 400;
+            
+        }
+    }
+    
+    &__test {
+        background-color: hsla(207, 14%, 29%, 0.07);
+        background-image: url(../../../../assets/Arrow-right.svg), url(../../../../assets/gray-corner.svg);
+        background-repeat: no-repeat;
+        background-position: 354px 166px, right bottom;
+        
+        h3 {
+            color: hsla(207, 14%, 29%, 0.64);
+            font-size: var(--font-size-2);
+            font-style: italic;
+            font-weight: 400;
+    
+        }
+    
+        h2 {
+            color: var(--color-light-700);
+            font-size: 4rem;
+            font-style: italic;
+            font-weight: 400;
+    
+        }
+    }
+}

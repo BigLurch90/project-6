@@ -4,6 +4,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-headline);
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -33,12 +35,16 @@ h6 {
 
 p {
     line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
 }
 
 a {
     color: var(--color-dark);
     text-decoration: none;
     line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
     &:hover {
         color: var(--color-accent);
     }
@@ -46,4 +52,6 @@ a {
 
 li {
     line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
 }
