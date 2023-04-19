@@ -4,7 +4,25 @@
     grid-template-columns: var(--grid-container);
     position: absolute;
     width: 100%;
+    transition: all 0.3s;
 
+    &--scroll {
+        background-color: hsla(207, 14%, 29%, 0.7);
+        height: 5rem;
+        position: fixed;
+        padding-top: 0.5rem;
+        backdrop-filter: blur(10px);
+        z-index: 99;
+
+        .site-header__logo {
+            opacity: 1;
+            visibility: visible;
+            
+            svg {
+                height: 3rem;
+            }
+        }
+    }
 
     &__inner {
         display: flex;
@@ -15,6 +33,8 @@
 
     &__list {
         display: flex;
+        margin: 0;
+        padding: 0;
         gap: var(--gap-m);
         color: var(--color-dark-900);
         font-style: italic;
@@ -36,7 +56,8 @@
     &__link {
 
         &:hover {
-            text-decoration: 4px underline var(--color-accent-orange-900);
+            border-bottom: 3px solid var(--color-accent-orange-900);
+            padding-bottom: 3px;
         }
     }
 
