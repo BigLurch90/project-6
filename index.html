@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/mjx2jrf.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css">
+    <script src="./src/JavaScript/headerScroll.js" defer></script>
+    <script src="./src/JavaScript/popup.js" defer></script>
 </head>
 <body>
 
@@ -26,8 +28,8 @@
                 </div>
 
                 <ul class="site-header__list">
-                    <li class="site-header__item"><a href="" class="site-header__link">HEM</a></li>
-                    <li class="site-header__item"><a href="" class="site-header__link">TRÄNING</a></li>
+                    <li class="site-header__item"><a href="#home" class="site-header__link">HEM</a></li>
+                    <li class="site-header__item"><a href="#membership" class="site-header__link">TRÄNING</a></li>
                     <li class="site-header__item"><a href="" class="site-header__link">OM OSS</a></li>
                     <li class="site-header__item"><a href="" class="site-header__link">KONTAKT</a></li>
                     <li class="site-header__item"><a href="" class="site-header__link">ÖPPETIDER</a></li>
@@ -44,7 +46,7 @@
 
         </header>
 
-        <section class="site-hero">
+        <section class="site-hero" id="home">
 
             <div class="site-hero__inner">
 
@@ -73,13 +75,17 @@
                     </div>
 
                     <div class="site-hero__social">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                            <path id="Union_3" data-name="Union 3" d="M3407.511,20h-2.177V12.917h2.5L3408.25,10h-2.916V7.916A1.574,1.574,0,0,1,3407,6.25h1.667V3.75a4.747,4.747,0,0,0-2.083-.417c-2.5,0-4.167,1.667-4.167,4.583V10h-2.5v2.917h2.5V20H3392V.023h2.936a3.371,3.371,0,0,1,.4-.023h13.334q.078,0,.155,0V0H3412V3.068h-.01c.007.088.01.176.01.266V20Z" transform="translate(-3392)" fill="#fff"/>
-                        </svg>
+                        <a href="https://www.facebook.com/profile.php?id=100063602482903">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path id="Union_3" data-name="Union 3" d="M3407.511,20h-2.177V12.917h2.5L3408.25,10h-2.916V7.916A1.574,1.574,0,0,1,3407,6.25h1.667V3.75a4.747,4.747,0,0,0-2.083-.417c-2.5,0-4.167,1.667-4.167,4.583V10h-2.5v2.917h2.5V20H3392V.023h2.936a3.371,3.371,0,0,1,.4-.023h13.334q.078,0,.155,0V0H3412V3.068h-.01c.007.088.01.176.01.266V20Z" transform="translate(-3392)" fill="#fff"/>
+                            </svg>
+                        </a>
                         
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                            <path id="Union_4" data-name="Union 4" d="M3406.595,20v-.016q-.212.015-.427.016h-8.333q-.216,0-.429-.016V20H3392V14.595h.016c-.011-.141-.016-.284-.016-.428V5.834c0-.144,0-.287.016-.429H3392V0h5.405V.015c.141-.01.283-.015.427-.015h8.333c.148,0,.295.006.44.016L3406.595,0H3412l-.01,5.5q.01.163.01.328v8.334c0,.144-.006.287-.016.429H3412V20ZM3396.8,10a5.2,5.2,0,1,0,5.2-5.2A5.206,5.206,0,0,0,3396.8,10Zm10.4-6a.8.8,0,1,0,.8-.8A.8.8,0,0,0,3407.2,4Zm-8.8,6a3.6,3.6,0,1,1,3.6,3.6A3.6,3.6,0,0,1,3398.4,10Z" transform="translate(-3392)" fill="#fff"/>
-                        </svg>                            
+                        <a href="https://www.instagram.com/traningslagret/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path id="Union_4" data-name="Union 4" d="M3406.595,20v-.016q-.212.015-.427.016h-8.333q-.216,0-.429-.016V20H3392V14.595h.016c-.011-.141-.016-.284-.016-.428V5.834c0-.144,0-.287.016-.429H3392V0h5.405V.015c.141-.01.283-.015.427-.015h8.333c.148,0,.295.006.44.016L3406.595,0H3412l-.01,5.5q.01.163.01.328v8.334c0,.144-.006.287-.016.429H3412V20ZM3396.8,10a5.2,5.2,0,1,0,5.2-5.2A5.206,5.206,0,0,0,3396.8,10Zm10.4-6a.8.8,0,1,0,.8-.8A.8.8,0,0,0,3407.2,4Zm-8.8,6a3.6,3.6,0,1,1,3.6,3.6A3.6,3.6,0,0,1,3398.4,10Z" transform="translate(-3392)" fill="#fff"/>
+                            </svg>                            
+                        </a>
                     </div>
 
                 </footer>
@@ -88,7 +94,40 @@
 
         </section>
 
-        <section class="program">
+        <section class="popup">
+
+            <div class="popup__inner">
+                <div class="popup__content">
+                    <h2>
+                        Fortfarande osäker?
+                    </h2>
+
+                    <p>
+                        Signa upp dig på ett år och få 30% rabatt på din första månad!
+                    </p>
+
+                    <a href="#membership" >
+                        <button class="popup__sign-button" id="close">Ta del av erbjudantet</button>
+                    </a>
+                </div>
+
+                <button class="popup__cancle-button" id="closeTo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+                        <g id="Cansle-button" transform="translate(-1127 -123)">
+                          <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1127 123)" fill="#fd3e1d" stroke="#f2f3f3" stroke-width="2">
+                            <circle cx="21.5" cy="21.5" r="21.5" stroke="none"/>
+                            <circle cx="21.5" cy="21.5" r="20.5" fill="none"/>
+                          </g>
+                          <line id="Line_5" data-name="Line 5" y1="21.141" x2="21.141" transform="translate(1138.429 134.429)" fill="none" stroke="#f2f3f3" stroke-width="2"/>
+                          <line id="Line_6" data-name="Line 6" x1="21.141" y1="21.141" transform="translate(1138.429 134.429)" fill="none" stroke="#f2f3f3" stroke-width="2"/>
+                        </g>
+                      </svg>                      
+                </button>
+            </div>
+
+        </section>
+
+        <section class="program" id="membership">
 
             <div class="program__inner">
 
@@ -348,13 +387,17 @@
                         <img src="./assets/Minfriskvard.png" alt="Minfriskvard-logo">
 
                         <div class="site-footer__social">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                <path id="Union_3" data-name="Union 3" d="M3407.511,20h-2.177V12.917h2.5L3408.25,10h-2.916V7.916A1.574,1.574,0,0,1,3407,6.25h1.667V3.75a4.747,4.747,0,0,0-2.083-.417c-2.5,0-4.167,1.667-4.167,4.583V10h-2.5v2.917h2.5V20H3392V.023h2.936a3.371,3.371,0,0,1,.4-.023h13.334q.078,0,.155,0V0H3412V3.068h-.01c.007.088.01.176.01.266V20Z" transform="translate(-3392)" fill="#fff"/>
-                            </svg>
+                            <a href="https://www.facebook.com/profile.php?id=100063602482903">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path id="Union_3" data-name="Union 3" d="M3407.511,20h-2.177V12.917h2.5L3408.25,10h-2.916V7.916A1.574,1.574,0,0,1,3407,6.25h1.667V3.75a4.747,4.747,0,0,0-2.083-.417c-2.5,0-4.167,1.667-4.167,4.583V10h-2.5v2.917h2.5V20H3392V.023h2.936a3.371,3.371,0,0,1,.4-.023h13.334q.078,0,.155,0V0H3412V3.068h-.01c.007.088.01.176.01.266V20Z" transform="translate(-3392)" fill="#fff"/>
+                                </svg>
+                            </a>
                             
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                <path id="Union_4" data-name="Union 4" d="M3406.595,20v-.016q-.212.015-.427.016h-8.333q-.216,0-.429-.016V20H3392V14.595h.016c-.011-.141-.016-.284-.016-.428V5.834c0-.144,0-.287.016-.429H3392V0h5.405V.015c.141-.01.283-.015.427-.015h8.333c.148,0,.295.006.44.016L3406.595,0H3412l-.01,5.5q.01.163.01.328v8.334c0,.144-.006.287-.016.429H3412V20ZM3396.8,10a5.2,5.2,0,1,0,5.2-5.2A5.206,5.206,0,0,0,3396.8,10Zm10.4-6a.8.8,0,1,0,.8-.8A.8.8,0,0,0,3407.2,4Zm-8.8,6a3.6,3.6,0,1,1,3.6,3.6A3.6,3.6,0,0,1,3398.4,10Z" transform="translate(-3392)" fill="#fff"/>
-                            </svg>   
+                            <a href="https://www.instagram.com/traningslagret/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path id="Union_4" data-name="Union 4" d="M3406.595,20v-.016q-.212.015-.427.016h-8.333q-.216,0-.429-.016V20H3392V14.595h.016c-.011-.141-.016-.284-.016-.428V5.834c0-.144,0-.287.016-.429H3392V0h5.405V.015c.141-.01.283-.015.427-.015h8.333c.148,0,.295.006.44.016L3406.595,0H3412l-.01,5.5q.01.163.01.328v8.334c0,.144-.006.287-.016.429H3412V20ZM3396.8,10a5.2,5.2,0,1,0,5.2-5.2A5.206,5.206,0,0,0,3396.8,10Zm10.4-6a.8.8,0,1,0,.8-.8A.8.8,0,0,0,3407.2,4Zm-8.8,6a3.6,3.6,0,1,1,3.6,3.6A3.6,3.6,0,0,1,3398.4,10Z" transform="translate(-3392)" fill="#fff"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -3,23 +3,23 @@
     background-image: url(../../../assets/Rectangle-13.png), url(../../../assets/Hero-Background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: inherit;
+    width: 100%;
     display: grid;
     grid-template-columns: var(--grid-container);
 
     &__inner {
         grid-column: inner;
         display: flex;
-        align-items: center;
+        flex-direction: column;
     }
-
+    
     &__footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 8.75rem;
-        position: absolute;
-        bottom: var(--gap-l);
-        width: var(--page-width);
+        margin-bottom: 2.3rem;
     }
 
     &__read-more {
@@ -39,6 +39,7 @@
 }
 
 .hero-content {
+    margin-top: 16.5rem;
     
     &__title {
         margin: 0;
