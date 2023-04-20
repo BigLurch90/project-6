@@ -1,16 +1,24 @@
-window.addEventListener('load', function(){
-    setTimeout(
-        function open(event){
-            document.querySelector('.popup').style.display = 'flex';
-        },
-        5000 
-    )
-});
+const popupAdd = () => {
+    const membershipButton = document.querySelector('#membership')
+    const closeButton = document.querySelector('#close')
+    
+    const openAdd = () => {
+        setTimeout( function open(){
+                document.querySelector('.popup').style.display = 'flex';
+            }, 5000)
+    }
+    
+    const closeAdd = () => {
+        document.querySelector('.popup').style.display = 'none';
+    }
+    
+    window.addEventListener('load', openAdd);
+    
+    membershipButton.addEventListener('click', closeAdd);
+    
+    closeButton.addEventListener('click', closeAdd);
 
-document.querySelector('#close').addEventListener('click', function(){
-    document.querySelector('.popup').style.display = 'none';
-});
 
-document.querySelector('#closeTo').addEventListener('click', function(){
-    document.querySelector('.popup').style.display = 'none';
-});
+}
+
+popupAdd()
