@@ -213,7 +213,7 @@ li {
 
 .site-hero {
   min-height: 100vh;
-  background-image: url(../../../assets/Rectangle-13.png), url(../../../assets/Hero-Background.png);
+  background-image: url(./assets/Rectangle-13.png), url(./assets/Hero-Background.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: inherit;
@@ -345,7 +345,7 @@ li {
 }
 .program__membership {
   background-color: var(--color-light-700);
-  background-image: url(../../../../assets/Arrow-right.svg), url(../../../../assets/blue-corner.svg);
+  background-image: url(./assets/Arrow-right.svg), url(./assets/blue-corner.svg);
   background-repeat: no-repeat;
   background-position: 96% 92%, right bottom;
 }
@@ -367,7 +367,7 @@ li {
 }
 .program__grupp {
   background-color: hsla(207deg, 14%, 29%, 0.07);
-  background-image: url(../../../../assets/Arrow-right.svg), url(../../../../assets/gray-corner.svg);
+  background-image: url(./assets/Arrow-right.svg), url(./assets/gray-corner.svg);
   background-repeat: no-repeat;
   background-position: 96% 92%, right bottom;
 }
@@ -385,7 +385,7 @@ li {
 }
 .program__test {
   background-color: hsla(207deg, 14%, 29%, 0.07);
-  background-image: url(../../../../assets/Arrow-right.svg), url(../../../../assets/gray-corner.svg);
+  background-image: url(./assets/Arrow-right.svg), url(./assets/gray-corner.svg);
   background-repeat: no-repeat;
   background-position: 96% 92%, right bottom;
 }
@@ -555,7 +555,7 @@ li {
 }
 .advertising__inner {
   grid-column: inner;
-  background-image: url(../../../../assets/Arrow-right.svg), url(../../../../assets/blue-corner.svg), url(../../../../assets/Tone-advertising.png), url(../../../../assets/Bg-advertising.png);
+  background-image: url(./assets/Arrow-right.svg), url(./assets/blue-corner.svg), url(./assets/Tone-advertising.png), url(./assets/Bg-advertising.png);
   background-position: 99% 95%, right bottom, left top, left top;
   background-repeat: no-repeat;
   background-size: auto, auto, cover, cover;
@@ -652,7 +652,10 @@ li {
 .calender-reception {
   width: 425px;
   background-color: var(--color-light-600);
-  padding: 45px 26px;
+  padding: 45px 26px 47px 26px;
+  background-image: url(./assets/Gray-cornor-top.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 .calender-reception li:nth-child(odd) {
   background-color: hsla(0deg, 0%, 100%, 0.07);
@@ -693,7 +696,7 @@ li {
   color: var(--color-dark-900);
   opacity: 0.42;
   font-size: 11px;
-  padding: 0 0 47px 43px;
+  padding: 19px 0 0 19px;
 }
 
 .calender-sauna {
@@ -801,7 +804,7 @@ li {
   background-color: var(--color-light);
   height: 40.625rem;
   width: 66.125rem;
-  background-image: url(../../../../assets/Offer-tone.png), url(../../../../assets/Offer-img.png);
+  background-image: url(./assets/Offer-tone.png), url(./assets/Offer-img.png);
   background-repeat: no-repeat;
   background-position: top right, top right;
   padding: 3rem 5rem;
