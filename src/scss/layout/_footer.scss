@@ -43,6 +43,10 @@
     &__link {
         color: var(--color-dark-900);
         font-size: 1rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
     
     &__media {

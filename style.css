@@ -93,9 +93,6 @@ a {
   margin: 0;
   padding: 0;
 }
-a:hover {
-  color: var(--color-accent);
-}
 
 li {
   line-height: var(--line-height);
@@ -193,6 +190,9 @@ li {
   color: var(--color-dark-900);
   font-size: 1rem;
 }
+.site-footer__link:hover {
+  text-decoration: underline;
+}
 .site-footer__media {
   margin-top: 8.5rem;
   display: flex;
@@ -269,6 +269,28 @@ li {
   background-color: var(--color-accent-orange-900);
   padding: 0.75rem 1.75rem;
   transform: skew(-12deg);
+  cursor: pointer;
+}
+.hero-content__reservation:hover {
+  animation-name: shine;
+  animation-duration: 260ms;
+}
+@keyframes shine {
+  0% {
+    background: linear-gradient(30deg, var(--color-light) 0%, var(--color-accent-orange-900--color-accent-orange-900) 25%);
+  }
+  25% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 25%, var(--color-accent-orange-900) 50%);
+  }
+  50% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 50%, var(--color-accent-orange-900) 75%);
+  }
+  75% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 75%, var(--color-accent-orange-900) 100%);
+  }
+  100% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 100%);
+  }
 }
 .hero-content__member {
   border: 0;
@@ -278,6 +300,28 @@ li {
   background-color: var(--color-accent-blue-900);
   padding: 0.75rem 1.75rem;
   transform: skew(-12deg);
+  cursor: pointer;
+}
+.hero-content__member:hover {
+  animation-name: shine-blue;
+  animation-duration: 260ms;
+}
+@keyframes shine-blue {
+  0% {
+    background: linear-gradient(30deg, var(--color-light) 0%, var(--color-accent-blue-900) 25%);
+  }
+  25% {
+    background: linear-gradient(30deg, var(--color-accent-blue-900) 0%, var(--color-light) 25%, var(--color-accent-blue-900) 50%);
+  }
+  50% {
+    background: linear-gradient(30deg, var(--color-accent-blue-900) 0%, var(--color-light) 50%, var(--color-accent-blue-900) 75%);
+  }
+  75% {
+    background: linear-gradient(30deg, var(--color-accent-blue-900) 0%, var(--color-light) 75%, var(--color-accent-blue-900) 100%);
+  }
+  100% {
+    background: linear-gradient(30deg, var(--color-accent-blue-900) 0%, var(--color-light) 100%);
+  }
 }
 
 .program {
@@ -303,7 +347,7 @@ li {
   background-color: var(--color-light-700);
   background-image: url(../../../../assets/Arrow-right.svg), url(../../../../assets/blue-corner.svg);
   background-repeat: no-repeat;
-  background-position: 354px 166px, right bottom;
+  background-position: 96% 92%, right bottom;
 }
 .program__membership h3 {
   color: var(--color-dark-900);
@@ -325,7 +369,7 @@ li {
   background-color: hsla(207deg, 14%, 29%, 0.07);
   background-image: url(../../../../assets/Arrow-right.svg), url(../../../../assets/gray-corner.svg);
   background-repeat: no-repeat;
-  background-position: 354px 166px, right bottom;
+  background-position: 96% 92%, right bottom;
 }
 .program__grupp h3 {
   color: var(--color-light-700);
@@ -343,7 +387,7 @@ li {
   background-color: hsla(207deg, 14%, 29%, 0.07);
   background-image: url(../../../../assets/Arrow-right.svg), url(../../../../assets/gray-corner.svg);
   background-repeat: no-repeat;
-  background-position: 354px 166px, right bottom;
+  background-position: 96% 92%, right bottom;
 }
 .program__test h3 {
   color: hsla(207deg, 14%, 29%, 0.64);
@@ -410,6 +454,27 @@ li {
   padding: 0.75rem 1.75rem;
   transform: skew(-12deg);
 }
+.newsletter-article__button:hover {
+  animation-name: shine;
+  animation-duration: 260ms;
+}
+@keyframes shine {
+  0% {
+    background: linear-gradient(30deg, var(--color-light) 0%, var(--color-accent-orange-900) 25%);
+  }
+  25% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 25%, var(--color-accent-orange-900) 50%);
+  }
+  50% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 50%, var(--color-accent-orange-900) 75%);
+  }
+  75% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 75%, var(--color-accent-orange-900) 100%);
+  }
+  100% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 100%);
+  }
+}
 .newsletter-article__share {
   font-family: var(--font-headline);
   font-size: var(--font-size-2);
@@ -455,6 +520,27 @@ li {
   background-color: var(--color-accent-orange-900);
   padding: 0.75rem 1.75rem;
   transform: skew(-12deg);
+}
+.newsletter-sidebar__button:hover {
+  animation-name: shine;
+  animation-duration: 260ms;
+}
+@keyframes shine {
+  0% {
+    background: linear-gradient(30deg, var(--color-light) 0%, var(--color-accent-orange-900) 25%);
+  }
+  25% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 25%, var(--color-accent-orange-900) 50%);
+  }
+  50% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 50%, var(--color-accent-orange-900) 75%);
+  }
+  75% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 75%, var(--color-accent-orange-900) 100%);
+  }
+  100% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 100%);
+  }
 }
 .newsletter-sidebar__share {
   font-family: var(--font-headline);
@@ -539,6 +625,28 @@ li {
   background-color: var(--color-accent-orange-900);
   padding: 0.75rem 1.75rem;
   transform: skew(-12deg);
+  cursor: pointer;
+}
+.calender-header__button:hover {
+  animation-name: shine;
+  animation-duration: 260ms;
+}
+@keyframes shine {
+  0% {
+    background: linear-gradient(30deg, var(--color-light) 0%, var(--color-accent-orange-900--color-accent-orange-900) 25%);
+  }
+  25% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 25%, var(--color-accent-orange-900) 50%);
+  }
+  50% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 50%, var(--color-accent-orange-900) 75%);
+  }
+  75% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 75%, var(--color-accent-orange-900) 100%);
+  }
+  100% {
+    background: linear-gradient(30deg, var(--color-accent-orange-900) 0%, var(--color-light) 100%);
+  }
 }
 
 .calender-reception {

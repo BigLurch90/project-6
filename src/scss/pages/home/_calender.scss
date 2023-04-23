@@ -49,6 +49,53 @@
         background-color: var(--color-accent-orange-900);
         padding: 0.75rem 1.75rem;
         transform: skew(-12deg);
+        cursor: pointer;
+
+        &:hover {
+            animation-name: shine;
+            animation-duration: 260ms;
+          }
+          
+          @keyframes shine {
+            0% {
+              background: linear-gradient(
+                30deg, 
+                var(--color-light) 0%, 
+                var(--color-accent-orange-900--color-accent-orange-900) 25%
+              );
+            }
+          
+            25% {
+              background: linear-gradient(
+                30deg, 
+                var(--color-accent-orange-900) 0%, 
+                var(--color-light) 25%, 
+                var(--color-accent-orange-900) 50%);
+            }
+          
+            50% {
+              background: linear-gradient(
+                30deg,
+                var(--color-accent-orange-900) 0%, 
+                var(--color-light) 50%, 
+                var(--color-accent-orange-900) 75%); 
+            }
+          
+            75% {
+              background: linear-gradient(
+                30deg, 
+                var(--color-accent-orange-900) 0%, 
+                var(--color-light) 75%, 
+                var(--color-accent-orange-900) 100%); 
+            }
+          
+            100% {
+              background: linear-gradient(
+                30deg, 
+                var(--color-accent-orange-900) 0%, 
+                var(--color-light) 100%); 
+            }
+          }
     }
 }
 
